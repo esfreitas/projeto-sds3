@@ -19,7 +19,7 @@ public class Seller {
 	private Long id;
 	private String name;
 	
-	@OneToMany(mappedBy = "seller")
+	@OneToMany()
 	private List<Sale> sales =  new ArrayList<>();
 	
 	public Seller() {
